@@ -11,7 +11,13 @@ namespace Aqueduct.Toggles.Configuration.Layouts
         [ConfigurationProperty("placeholder")]
         internal string Placeholder => (string)this["placeholder"];
 
+        [ConfigurationProperty("newPlaceholder")]
+        internal string NewPlaceholder => (string)this["newPlaceholder"];
+
         [ConfigurationProperty("id", IsRequired = true)]
         internal Guid SublayoutId => (Guid)this["id"];
+
+        [ConfigurationProperty("newId", IsRequired = true)]
+        internal Guid NewSublayoutId => (Guid)this["newId"];
     }
 }

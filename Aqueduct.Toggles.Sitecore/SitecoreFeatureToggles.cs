@@ -26,7 +26,9 @@ namespace Aqueduct.Toggles.Sitecore
                            .Select(x => new LayoutReplacement.SublayoutReplacement
                                         {
                                             SublayoutId = x.SublayoutId,
-                                            Placeholder = x.PlaceHolder
+                                            Placeholder = x.PlaceHolder,
+                                            NewSublayoutId = x.NewSublayoutId,
+                                            NewPlaceholder = x.NewPlaceHolder
                                         })
                            .ToList()
                    };

@@ -13,7 +13,9 @@ namespace Aqueduct.Toggles
         public class SublayoutReplacement
         {
             public Guid SublayoutId { get; set; }
+            public Guid NewSublayoutId { get; set; }
             public string Placeholder { get; set; }
+            public string NewPlaceholder { get; set; }
         }
     }
 }
